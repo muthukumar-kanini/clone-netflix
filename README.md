@@ -2,6 +2,9 @@
 
 -npx Create React App
 -Configured Tailwindcss
+- Header
+- Login Form 
+- Sign Up 
 
 # Features
 - Login / Sign Up
