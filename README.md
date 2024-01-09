@@ -1,10 +1,15 @@
 # Clone-netflix
 
--npx Create React App
--Configured Tailwindcss
+- npx Create React App
+- Configured Tailwindcss
 - Header
 - Login Form 
 - Sign Up 
+- Form Validation 
+- Routing 
+- useRef Hook 
+- Firebase Setup
+- Authentication  
 
 # Features
 - Login / Sign Up
