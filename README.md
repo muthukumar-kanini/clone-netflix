@@ -10,6 +10,10 @@
 - useRef Hook 
 - Firebase Setup
 - Authentication  
+- Created SignIn and SignUp Api 
+- Created Redux Store to store user information
+- implemented Sign Out 
+- Movie Api 
 
 # Features
 - Login / Sign Up
