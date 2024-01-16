@@ -5,12 +5,13 @@ import {  createUserWithEmailAndPassword , signInWithEmailAndPassword,updateProf
 import { auth } from "../utils/Firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
+ 
   const dispatch = useDispatch()
 
   const toggleSignInForm = () => {
@@ -40,7 +41,8 @@ const Login = () => {
           console.log(user);
           
 updateProfile(user ,{
-  displayName: name.current?.value, photoURL: "https://avatars.githubusercontent.com/u/127303158?v=4"
+  displayName: name.current?.value, photoURL:USER_AVATAR,
+  
 }).then(() => {
   const {
     uid: uid,
@@ -55,14 +57,14 @@ updateProfile(user ,{
     email: email,
     photoURL : photoURL
 }))
-  navigate('/browse')
+
   // ...
 }).catch((error) => {
   // An error occurred
   // ...s
   setErrorMessage(errorMessage)
 });
-          navigate('/browse')
+          
           
         })
         .catch((error) => {
@@ -76,7 +78,7 @@ updateProfile(user ,{
         .then((userCredential) => {
           const user = userCredential.user;
           console.log(user);
-          navigate('/browse')
+          
      
         })
         .catch((error) => {

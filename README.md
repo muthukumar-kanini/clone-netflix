@@ -13,7 +13,11 @@
 - Created SignIn and SignUp Api 
 - Created Redux Store to store user information
 - implemented Sign Out 
-- Movie Api 
+- Protected routes
+- Hardcoded Values to the Constans File 
+- Created TMDB api key
+- Get Data From Api
+  
 
 # Features
 - Login / Sign Up
