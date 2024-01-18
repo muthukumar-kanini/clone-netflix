@@ -9,3 +9,5 @@ export const USER_AVATAR =
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMzQzOTY1OWIyNmZkNmM2YTBiNDVjZjJjNTg2ZDFjMSIsInN1YiI6IjY1YTY3NmRjNTFhNjRlMDEyODU0NjNiOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2bBJoptxrxPcYRPROob6BPpuUQxJWmTFSLcR3aSDRUA'
     }
   };
+
+  export const IMG_CDN = "https://image.tmdb.org/t/p/w300"
